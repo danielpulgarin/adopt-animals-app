@@ -13,9 +13,31 @@
   <title>La Gatoría</title>
 
   <style>
-    .btn-outline-success-hover {
-      background-color: #3e5269;
+    .btn-outline-success.focus, 
+    .btn-outline-success:focus{
 
+      box-shadow: rgba(79, 161, 255, .5)
+    }
+
+    .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+    .btn-outline-success:not(:disabled):not(.disabled):active:focus,
+    .show>.btn-outline-success.dropdown-toggle:focus {
+      background-color: rgb(79, 161, 255);
+
+    }
+
+    .card {
+      margin-left: 1cm
+    }
+
+    .submit:focus {
+      background-color: #4fa1ff;
+    }
+
+    .btn-outline-success:hover {
+
+      background-color: #4fa1ff;
+      border: #4fa1ff
     }
 
     .card {
@@ -41,6 +63,12 @@
     }
 
     .btn-outline-success {
+
+      color: #4fa1ff;
+      border-color: #4fa1ff;
+    }
+
+    .form-inline {
 
       color: #3787d3;
       border-color: #4fa1ff;
@@ -107,37 +135,42 @@
   </header>
 
   <div class="container">
-    <div class="row-float">
-    <div class="col">
-      <div class="card" style="width: 24rem;">
-        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 24rem;">
-        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card" style="width: 24rem;">
+    <div class="row-fluid">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Mostacho 1</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary">Adoptar</a>
           </div>
         </div>
-        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Mostacho 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Adoptar</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Mostacho 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <a href="#" class="btn btn-primary">Adoptar</a>
+              </div>
+              <div>
+              </div>
+            </div>
 
-      </div>
+          </div>
 </body>
 
 </html>
