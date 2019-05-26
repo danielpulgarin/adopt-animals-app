@@ -13,11 +13,39 @@
   <title>La Gatoría</title>
 
   <style>
-    .btn-outline-success.focus, 
-    .btn-outline-success:focus{
-
-      box-shadow: rgba(79, 161, 255, .5)
+    .btn-secondary {
+      border-color: #ffffff;
+      background-color: #4fa1ff
     }
+
+    .btn-secondary:hover {
+      border-color: #ffffff;
+      background-color: #4fa1ffa1;
+
+    }
+
+    .btn-secondary:not(:disabled):not(.disabled).active,
+    .btn-secondary:not(:disabled):not(.disabled):active,
+    .show>.btn-secondary.dropdown-toggle {
+      background-color: #4fa1ff
+    }
+
+    .wrapper2 {
+      width: 63%;
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 10px;
+      margin-top: 2cm;
+    }
+
+    .navbar.navbar-expand-lg.navbar-light {
+      width: 100%;
+      justify-content: space-between;
+      background-color: #3787d3
+    }
+
 
     .btn-outline-success:not(:disabled):not(.disabled).active:focus,
     .btn-outline-success:not(:disabled):not(.disabled):active:focus,
@@ -26,9 +54,22 @@
 
     }
 
-    .card {
-      margin-left: 1cm
+    .btn-outline-success.focus,
+    .btn-outline-success:focus {
+      outline: 0;
+      box-shadow: rgba(79, 161, 255, .5)
     }
+
+
+    .wrapper {
+      width: center;
+      max-width: 960px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px;
+    }
+
 
     .submit:focus {
       background-color: #4fa1ff;
@@ -42,8 +83,10 @@
 
     .card {
 
-      float: left;
-      margin-top: 3cm
+      float: center;
+      margin-top: 3cm;
+      background-color: rgba(79, 161, 255, 0.123);
+
     }
 
     .bg-light {
@@ -57,10 +100,6 @@
       background-color: #4fa1ff;
     }
 
-    .bg-light {
-
-      background-color: #4fa1ff;
-    }
 
     .btn-outline-success {
 
@@ -80,46 +119,35 @@
 
 <body>
 
-  <body style="background-color:rgba(56, 56, 56, 0.308);">
+  <body style="background-color:#ffffff;">
   </body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">La Gatoría</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(79, 161, 255, 0.123)">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="#">La Gatoría</a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="animal.html">Quiero adoptar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dona</a>
+            <a class="nav-link" href="newAnimal.html" tabindex="-1" aria-disabled="true">Quiero registrar</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar gato" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
         </form>
       </div>
     </nav>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -132,45 +160,157 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+
   </header>
-
-  <div class="container">
-    <div class="row-fluid">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Mostacho 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-primary">Adoptar</a>
-          </div>
+  <div class="wrapper2" class="botones">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Género
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Gata</a>
+        <a class="dropdown-item" href="#">Gato</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Edad
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="">1-3 meses</a>
+        <a class="dropdown-item" href="">3-6 meses</a>
+        <a class="dropdown-item" href="">6-12 meses</a>
+        <a class="dropdown-item" href="">1-2 años</a>
+        <a class="dropdown-item" href="">2 o más años</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Raza
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Egeo</a>
+        <a class="dropdown-item" href="#">Persa</a>
+        <a class="dropdown-item" href="#">Siamés</a>
+        <a class="dropdown-item" href="#">Esfinge</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Convivencia
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Convive con perros</a>
+        <a class="dropdown-item" href="#">Convive con gatos</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Enfermedad
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Ninguna</a>
+        <a class="dropdown-item" href="#">Positivo leucemia</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Cuidados
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Cuidados especiales</a>
+        <a class="dropdown-item" href="#">Ninguno</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="wrapper">
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Mostacho 2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Adoptar</a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Mostacho 3</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <a href="#" class="btn btn-primary">Adoptar</a>
-              </div>
-              <div>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 2</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 3</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+            card's
+            content.</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-          </div>
+
+
+
 </body>
 
 </html>
