@@ -1,4 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>La Gatoría</title>
+
+    <style type="text/css" media="screen">
+        @import 'css/estilos-newAnimal.css';
+    </style>
+
+</head>
+
+<body>
+
+    <body style="background-color:#ffffff;">
+    </body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(79, 161, 255, 0.123)">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="List.html">La Gatoría</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="List.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animal.html">Quiero adoptar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="newAnimal.html" tabindex="-1" aria-disabled="true">Quiero dar en
+                            adopción</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar gato" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
 
 
-</html>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    </header>
+
+    <body>
+        <h1 class=h1>
+            La Gatoría
+        </h1>
+
+        <div class="wrapper">
+            <form class=registro>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nombre</label>
+                        <input type="nombre" class="form-control" id="inputEmail4" placeholder="Nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Apellido</label>
+                        <input type="apellido" class="form-control" id="inputPassword4" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">Celular</label>
+                        <input type="celular" class="form-control" id="inputPassword4" placeholder="Celular">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ControlSelect1">Tipo de gato</label>
+                    <select class="form-control" id="ControlSelect1">
+                        <option selected>Seleccione una opción</option>
+                        <option>Madre con crías</option>
+                        <option>Gato grande</option>
+                        <option>Gato pequeño</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputCity">Nombre del gato o gata</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputEdad">Edad</label>
+                        <select id="inputEdad" class="form-control">
+                            <option selected>Seleccione una opción</option>
+                            <option>1-3 meses</option>
+                            <option>3-6 meses</option>
+                            <option>6-12 meses</option>
+                            <option>1-2 años</option>
+                            <option>2 o más años</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputBarrio">Barrio</label>
+                        <input type="text" class="form-control" id="inputBarrio">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputSexo">Sexo</label>
+                        <select id="inputSexo" class="form-control">
+                            <option selected>Seleccione una opción</option>
+                            <option>Hembra</option>
+                            <option>Macho</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputColor">Color de pelo y ojos</label>
+                        <input type="text" class="form-control" id="inputColor">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputRaza">Raza</label>
+                        <input type="text" class="form-control" id="inputRaza">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputDesc">Descripción del gato o gata</label>
+                    <input type="text" class="form-control" id="inputDesc">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Acepto las condiciones
+                        </label>
+                    </div>
+                    <div class=info-cat>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Envíar
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Envíar</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estás segurx de que toda la información está correcta?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Corregir</button>
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Sí,
+                                            enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+
+        </div>
+
+
+
+
+    </body>

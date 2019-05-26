@@ -12,106 +12,8 @@
 
   <title>La Gatoría</title>
 
-  <style>
-    .btn-secondary {
-      border-color: #ffffff;
-      background-color: #4fa1ff
-    }
-
-    .btn-secondary:hover {
-      border-color: #ffffff;
-      background-color: #4fa1ffa1;
-
-    }
-
-    .btn-secondary:not(:disabled):not(.disabled).active,
-    .btn-secondary:not(:disabled):not(.disabled):active,
-    .show>.btn-secondary.dropdown-toggle {
-      background-color: #4fa1ff
-    }
-
-    .wrapper2 {
-      width: 63%;
-      max-width: 960px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-gap: 10px;
-      margin-top: 2cm;
-    }
-
-    .navbar.navbar-expand-lg.navbar-light {
-      width: 100%;
-      justify-content: space-between;
-      background-color: #3787d3
-    }
-
-
-    .btn-outline-success:not(:disabled):not(.disabled).active:focus,
-    .btn-outline-success:not(:disabled):not(.disabled):active:focus,
-    .show>.btn-outline-success.dropdown-toggle:focus {
-      background-color: rgb(79, 161, 255);
-
-    }
-
-    .btn-outline-success.focus,
-    .btn-outline-success:focus {
-      outline: 0;
-      box-shadow: rgba(79, 161, 255, .5)
-    }
-
-
-    .wrapper {
-      width: center;
-      max-width: 960px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: 20px;
-    }
-
-
-    .submit:focus {
-      background-color: #4fa1ff;
-    }
-
-    .btn-outline-success:hover {
-
-      background-color: #4fa1ff;
-      border: #4fa1ff
-    }
-
-    .card {
-
-      float: center;
-      margin-top: 3cm;
-      background-color: rgba(79, 161, 255, 0.123);
-
-    }
-
-    .bg-light {
-
-      background-color: #4fa1ff;
-      position: static
-    }
-
-    .dropdown-menu {
-
-      background-color: #4fa1ff;
-    }
-
-
-    .btn-outline-success {
-
-      color: #4fa1ff;
-      border-color: #4fa1ff;
-    }
-
-    .form-inline {
-
-      color: #3787d3;
-      border-color: #4fa1ff;
-    }
+  <style type="text/css" media="screen">
+    @import 'css/estilos-list.css';
   </style>
 
 
@@ -127,18 +29,18 @@
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">La Gatoría</a>
+      <a class="navbar-brand" href="List.html">La Gatoría</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="List.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="animal.html">Quiero adoptar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="newAnimal.html" tabindex="-1" aria-disabled="true">Quiero registrar</a>
+            <a class="nav-link" href="newAnimal.html" tabindex="-1" aria-disabled="true">Quiero dar en adopción</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -166,7 +68,7 @@
     <div class="btn-group" role="group">
       <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        Género
+        Sexo
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
         <a class="dropdown-item" href="#">Gata</a>
@@ -221,15 +123,16 @@
     <div class="btn-group" role="group">
       <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
-        Cuidados
+        Barrio
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-        <a class="dropdown-item" href="#">Cuidados especiales</a>
-        <a class="dropdown-item" href="#">Ninguno</a>
+        <a class="dropdown-item" href="#">Barrio 1</a>
+        <a class="dropdown-item" href="#">Barrio 2</a>
       </div>
     </div>
   </div>
   </div>
+
   <div class="wrapper">
     <div class="col span4">
       <div class="card" style="width: 18rem;">

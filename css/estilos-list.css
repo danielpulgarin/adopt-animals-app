@@ -1,3 +1,6 @@
+.navbar {
+  font-family: 'Lora', serif;
+}
 
 .btn-secondary {
   border-color: #ffffff;
@@ -17,6 +20,7 @@
 }
 
 .wrapper2 {
+  font-family: 'Lora', serif;
   width: 63%;
   max-width: 960px;
   margin: 0 auto;
@@ -48,6 +52,7 @@
 
 
 .wrapper {
+  font-family: 'Lora', serif;
   width: center;
   max-width: 960px;
   margin: 0 auto;
