@@ -12,33 +12,8 @@
 
   <title>La Gatoría</title>
 
-  <style>
-    .card {
-
-      float: left;
-      margin-top: 3cm
-    }
-
-    .navbarnavbar-expand-lg {
-
-      background-color: #4fa1ff;
-    }
-
-    .dropdown-menu {
-
-      background-color: #4fa1ff;
-    }
-
-    .bg-light {
-
-      background-color: #4fa1ff;
-    }
-
-    .btn-outline-success {
-
-      color: #3787d3;
-      border-color: #4fa1ff;
-    }
+  <style type="text/css" media="screen">
+    @import 'css/estilos-list.css';
   </style>
 
 
@@ -46,46 +21,35 @@
 
 <body>
 
-  <body style="background-color:rgba(56, 56, 56, 0.308);">
+  <body style="background-color:#ffffff;">
   </body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">La Gatoría</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(79, 161, 255, 0.123)">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a class="navbar-brand" href="List.html">La Gatoría</a>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="List.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="animal.html">Quiero adoptar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Dona</a>
+            <a class="nav-link" href="newAnimal.html" tabindex="-1" aria-disabled="true">Quiero dar en adopción</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="Buscar" placeholder="Buscar" aria-label="Search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar gato" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
         </form>
       </div>
     </nav>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -98,19 +62,155 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
-  </header>
 
-  <div class="container-fluid">
-    <div class="card" style="width: 24rem;">
-      <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </header>
+  <div class="wrapper2" class="botones">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Sexo
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Gata</a>
+        <a class="dropdown-item" href="#">Gato</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Edad
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="">1-3 meses</a>
+        <a class="dropdown-item" href="">3-6 meses</a>
+        <a class="dropdown-item" href="">6-12 meses</a>
+        <a class="dropdown-item" href="">1-2 años</a>
+        <a class="dropdown-item" href="">2 o más años</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Raza
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Egeo</a>
+        <a class="dropdown-item" href="#">Persa</a>
+        <a class="dropdown-item" href="#">Siamés</a>
+        <a class="dropdown-item" href="#">Esfinge</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Convivencia
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Convive con perros</a>
+        <a class="dropdown-item" href="#">Convive con gatos</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Enfermedad
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Ninguna</a>
+        <a class="dropdown-item" href="#">Positivo leucemia</a>
+      </div>
+    </div>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Barrio
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Barrio 1</a>
+        <a class="dropdown-item" href="#">Barrio 2</a>
       </div>
     </div>
   </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Gato en busqueda de adopción</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="container">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/gato2.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mostacho 2</h5>
+            <p class="card-text">Gato en busqueda de adopción</p>
+            <a href="animal.html" class="btn btn-primary">Más información</a>
+            <a href="animal.html" class="btn btn-primary">Adoptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="container">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/gato3.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mostacho 3</h5>
+            <p class="card-text">Gato en busqueda de adopción</p>
+            <a href="animal.html" class="btn btn-primary">Más información</a>
+            <a href="animal.html" class="btn btn-primary">Adoptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Gato en busqueda de adopción</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Gato en busqueda de adopción</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col span4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/gato6.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mostacho 1</h5>
+          <p class="card-text">Gato en busqueda de adopción</p>
+          <a href="animal.html" class="btn btn-primary">Más información</a>
+          <a href="animal.html" class="btn btn-primary">Adoptar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </body>
 
 </html>
